@@ -1,0 +1,45 @@
+@import "_colors";
+@import "_fonts";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $outfit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $light-gray;
+}
+
+.card-container {
+  width: 300px;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card-header {
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.card-body {
+  margin: 8px;
+  h2, p {
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.2rem;
+    color: $dark-blue;
+    margin: 1rem 0;
+  }
+  p {
+    color: $grayish-blue;
+  }
+}
